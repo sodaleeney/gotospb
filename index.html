@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WHERE GO TO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Where go to?</h1>
+        <h1>What are you going do?</h1>
+        <div id="choices">
+            <button class="choice-btn" data-value="0">Nothing</button>
+            <button class="choice-btn" data-value="1">Eat</button>
+            <button class="choice-btn" data-value="2">Walk</button>
+            <button class="choice-btn" data-value="3">Both</button>
+        </div>
+
+        <button onclick="generatePlan()">Let's go</button>
+        <p id="selected-action" style="font-style: italic; color: gray;"></p>
+        <p id="station"></p>
+        <p id="result" class="fade-in" style="display: none;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
